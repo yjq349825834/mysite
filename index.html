@@ -12,14 +12,14 @@
 
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <td style="padding:20px;width:100%;vertical-align:middle">
+    <a href="images/Robotic Lab.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Robotic Lab.jpg" class="hoverZoomLink"></a>  
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p>
-                <a href="images/Robotic Lab.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Robotic Lab.jpg" class="hoverZoomLink"></a>  
-              </p>  
               <p style="text-align:center">
                 <name>Jiaqi Ye</name>
               </p>
@@ -37,8 +37,8 @@
               </p>
               <p style="text-align:center">
                 <a href="mailto:jxy404@outlook.com">Email</a> &nbsp/&nbsp
-                <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp
-                <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp
+                <a href="data/JIAQI YE-CV.pdf">CV</a> &nbsp/&nbsp
+                <a href="data/Jiaqi Ye-bio.txt">Bio</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=Gn39XzgAAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/jiaqi-ye-1490904/">Linkedin</a>
               </p>
@@ -61,9 +61,97 @@
             </td>
           </tr>
         </tbody></table>
+
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>Project Experience</heading>            
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+            <td style="padding:0px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfsuper_image'><video  width=120% height=120% muted autoplay loop>
+                <source src="images/movie_resized.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/UR_automation1.jpg' width="180"></div>
+              </div>
+              <script type="text/javascript">
+                function nerfsuper_start() {
+                  document.getElementById('nerfsuper_image').style.opacity = "1";
+                }
+
+                function nerfsuper_stop() {
+                  document.getElementById('nerfsuper_image').style.opacity = "0";
+                }
+                nerfsuper_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>UR and Machine Vision Enhanced Manufacturing Line Automation</papertitle>
+              <br>
+              <strong>Jiaqi Ye</strong>, 
+              <a href="https://www.birmingham.ac.uk/staff/profiles/mechanical/hajiyavand-amir.aspx">Amir Hajiyavand </a>
+              <br>
+              <em>In progress...</em>  
+              <br>	
+              <p>This industrial project aims to seamlessly integrate a UR robot platform into a live machinery components manufacturing line, 
+                replacing a human operator to carry out repetitive quality inspection processes. The design consists of three modules: 
+                <br><strong>(1) Vision Module:</strong> This module utilizes customized computer vision algorithms to track and locate the targeted machine on the manufacturing line; 
+                <br><strong>(2) Central PLC Module:</strong> The Programmable Logic Controller(PLC) module reads information from the Vision Module and other PLCs on the 
+                manufacturing line, sending commands accordingly to the robot; 
+                <br><strong>(3) Robot Platform:</strong> The robot platform receives commands from the PLC and carries out corresponding inspection processes.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
+            <td style="padding:0px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='blocknerf_image'><video  width=120% height=120% muted autoplay loop>
+                <source src="images/Jiaqi_spring_detection_resized.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/Spring_detection.jpg' width="180">
+              </div>
+              <script type="text/javascript">
+                function blocknerf_start() {
+                  document.getElementById('blocknerf_image').style.opacity = "1";
+                }
+
+                function blocknerf_stop() {
+                  document.getElementById('blocknerf_image').style.opacity = "0";
+                }
+                blocknerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://waymo.com/research/block-nerf/">
+                <papertitle>Block-NeRF: Scalable Large Scene Neural View Synthesis</papertitle>
+              </a>
+              <br>
+              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
+              <a href="http://casser.io/">Vincent Casser</a>,
+              <a href="https://sites.google.com/site/skywalkeryxc/">Xinchen Yan</a>,
+              <a href="https://scholar.google.com/citations?user=5mJUkI4AAAAJ&hl=en">Sabeek Pradhan</a>, <br>
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+							<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://www.henrikkretzschmar.com/">Henrik Kretzschmar</a>
+              <br>
+        <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="https://waymo.com/research/block-nerf/">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2202.05263">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=6lGMCAzBzOQ">video</a>
+              <p></p>
+              <p>We can do city-scale reconstruction by training multiple NeRFs with millions of images.We can do city-scale reconstruction by training multiple NeRFs with millions of images.We can do city-scale reconstruction by training multiple NeRFs with millions of images.We can do city-scale reconstruction by training multiple NeRFs with millions of images.We can do city-scale reconstruction by training multiple NeRFs with millions of images.We can do city-scale reconstruction by training multiple NeRFs with millions of images.</p>
+            </td>
+          </tr>
+
           <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding:0px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='malle_image'>
                   <img src='images/MalleConv_after.jpg' width="160"></div>
@@ -103,55 +191,11 @@
               </p>
             </td>
           </tr>
-					
-          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/movie_resized.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/UR_automation.jpg' width="160"></div>
-              </div>
-              <script type="text/javascript">
-                function nerfsuper_start() {
-                  document.getElementById('nerfsuper_image').style.opacity = "1";
-                }
-
-                function nerfsuper_stop() {
-                  document.getElementById('nerfsuper_image').style.opacity = "0";
-                }
-                nerfsuper_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="http://yenchenlin.me/nerf-supervision/">
-                <papertitle>NeRF-Supervision: Learning Dense Object Descriptors from Neural Radiance Fields</papertitle>
-              </a>
-              <br>
-              <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
-              <a href="http://www.peteflorence.com/">Pete Florence</a>, 
-              <strong>Jonathan T. Barron</strong>,  <br>
-              <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>, 
-              <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
-              <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
-              <br>
-              <em>ICRA</em>, 2022  
-              <br>
-							<a href="http://yenchenlin.me/nerf-supervision/">project page</a> / 
-							<a href="https://arxiv.org/abs/2203.01913">arXiv</a> / 
-							<a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> /
-							<a href="https://github.com/yenchenlin/nerf-supervision-public">code</a> / 
-							<a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				
-              <p></p>
-              <p>NeRF works better than RGB-D cameras or multi-view stereo when learning object descriptors.</p>
-            </td>
-          </tr>
 
 			    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"  bgcolor="#ffffd0">
 			      <td style="padding:20px;width:25%;vertical-align:middle">
 			        <div class="one">
-			          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+			          <div class="two" id='refnerf_image'><video  width=120% height=200% muted autoplay loop>
 			          <source src="images/refnerf.mp4" type="video/mp4">
 			          Your browser does not support the video tag.
 			          </video></div>
@@ -323,53 +367,6 @@
               <p>Regularizing unseen views during optimization enables view synthesis from as few as 3 input images.</p>
             </td>
           </tr> 
-
-
-          <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='blocknerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/blocknerf_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/blocknerf_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function blocknerf_start() {
-                  document.getElementById('blocknerf_image').style.opacity = "1";
-                }
-
-                function blocknerf_stop() {
-                  document.getElementById('blocknerf_image').style.opacity = "0";
-                }
-                blocknerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-							<a href="https://waymo.com/research/block-nerf/">
-                <papertitle>Block-NeRF: Scalable Large Scene Neural View Synthesis</papertitle>
-              </a>
-              <br>
-              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
-              <a href="http://casser.io/">Vincent Casser</a>,
-              <a href="https://sites.google.com/site/skywalkeryxc/">Xinchen Yan</a>,
-              <a href="https://scholar.google.com/citations?user=5mJUkI4AAAAJ&hl=en">Sabeek Pradhan</a>, <br>
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-							<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://www.henrikkretzschmar.com/">Henrik Kretzschmar</a>
-              <br>
-        <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://waymo.com/research/block-nerf/">project page</a>
-        /
-              <a href="https://arxiv.org/abs/2202.05263">arXiv</a>
-        /
-              <a href="https://www.youtube.com/watch?v=6lGMCAzBzOQ">video</a>
-              <p></p>
-              <p>We can do city-scale reconstruction by training multiple NeRFs with millions of images.</p>
-            </td>
-          </tr>
 					
           <tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
