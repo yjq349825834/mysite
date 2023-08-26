@@ -32,7 +32,7 @@
                 During my PhD,I did research on next-genration 3D measurement and inspection prototypes; 
                 Worked as a core member in multi-disciplinary teams for two industrial projects (<a href="http://www.s-code.info/">S-CODE</a> and <a href="https://journals.sagepub.com/doi/full/10.1177/09544097211059303">High Speed Rail Monitoring</a>) and one research project (<a href="https://royalsociety.org/grants-schemes-awards/grants/international-exchanges/">RS Exchange</a>); 
                 Published research outcomes, outlined in more than ten papers in various IEEE, IET, and IMechE journals.
-                And, passed my PhD viva with no corrections....
+                And, is the only PhD graduate in Engineering of the Year 2022 to have passed the PhD viva with no corrections.
 
               </p>
               <p style="text-align:center">
@@ -127,8 +127,8 @@
             <td style="padding:20px;width:75%;vertical-align:middle">
                 <papertitle>Deep Learning based Track-side Vision System for EuroTunnel</papertitle>
               <br>
-              <a href="http://matthewtancik.com/">Edward Stewart</a>,
-              <strong>Jiaqi Ye</strong>
+              <strong>Jiaqi Ye</strong>,
+              <a href="https://www.birmingham.ac.uk/staff/profiles/eese/stewart-edward.aspx">Edward Stewart</a>
               <br>
               <em>07-2023 to Present</em>  
               <p>This project addresses a critical need by developing an innovative automatic vision system for the Eurotunnel (Folkestone - Calais). 
@@ -136,6 +136,43 @@
                 The importance of such a system lies in its potential to enhance safety, operational efficiency, and cost-effectiveness along this vital freight train route.
                 Our approach leverages a customized YOLO series model, tailored to the unique demands of the Eurotunnel environment. The development of the system holds the promise of significantly improving the normal operation of freight trains along this route.
               </p>
+            </td>
+          </tr>
+
+            <tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
+            <td style="padding:0px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='hnerf_image'><video  width=120% height=120% muted autoplay loop>
+                <source src="images/TIM2_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/TIM2_before.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function hnerf_start() {
+                  document.getElementById('hnerf_image').style.opacity = "1";
+                }
+
+                function hnerf_stop() {
+                  document.getElementById('hnerf_image').style.opacity = "0";
+                }
+                hnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/10129146">
+                <papertitle>Deep Learning and Laser-Based 3-D Pixel-Level Rail Surface Defect Detection Method</papertitle>
+              </a>
+              <br>
+              <strong>Jiaqi Ye</strong>,
+              <a href="https://www.birmingham.ac.uk/staff/profiles/eese/stewart-edward.aspx">Edward Stewart</a>,
+              <a href="https://www.linkedin.com/in/qianyu-chen-uob/?originalSubdomain=uk">Qianyu Chen</a>,
+              <a href="https://www.birmingham.ac.uk/staff/profiles/eese/roberts-clive.aspx">Clive Roberts</a> <br>
+              <br>
+              <em>IEEE Transactions on Instrumentation and Measurement</em>, vol. 72, pp. 1-12, 2023.
+              <br>
+              <p>Proposed a customized U-Net model, which allows you to process point cloud data in an 
+                 end-to-end manner for 3D surface defect detection and reconstruction.</p>
             </td>
           </tr>
 
@@ -356,49 +393,6 @@
               <p>Regularizing unseen views during optimization enables view synthesis from as few as 3 input images.</p>
             </td>
           </tr> 
-					
-          <tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
-            <td style="padding:0px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='hnerf_image'><video  width=120% height=120% muted autoplay loop>
-                <source src="images/TIM2_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/TIM2_before.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function hnerf_start() {
-                  document.getElementById('hnerf_image').style.opacity = "1";
-                }
-
-                function hnerf_stop() {
-                  document.getElementById('hnerf_image').style.opacity = "0";
-                }
-                hnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://grail.cs.washington.edu/projects/humannerf/">
-                <papertitle>HumanNeRF: Free-viewpoint Rendering of Moving People from Monocular Video</papertitle>
-              </a>
-              <br>
-              <a href="https://homes.cs.washington.edu/~chungyi/">Chung-Yi Weng</a>,
-              <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>, <br>
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://www.irakemelmacher.com/">Ira Kemelmacher-Shlizerman </a>
-              <br>
-              <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://grail.cs.washington.edu/projects/humannerf/">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2201.04127">arXiv</a>
-              /
-              <a href="https://youtu.be/GM-RoZEymmw">video</a>
-              <p></p>
-              <p>Combining NeRF with pose estimation lets you use a monocular video to do free-viewpoint rendering of a human.</p>
-            </td>
-          </tr>
 					
           <tr onmouseout="urf_stop()" onmouseover="urf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
