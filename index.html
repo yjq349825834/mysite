@@ -142,7 +142,7 @@
             <tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
             <td style="padding:0px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='hnerf_image'><video  width=120% height=120% muted autoplay loop>
+                <div class="two" id='hnerf_image'><video  width=130% height=130% muted autoplay loop>
                 <source src="images/TIM2_after.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
@@ -172,7 +172,48 @@
               <em>IEEE Transactions on Instrumentation and Measurement</em>, vol. 72, pp. 1-12, 2023.
               <br>
               <p>Proposed a customized U-Net model, which allows you to process point cloud data in an 
-                 end-to-end manner for 3D surface defect detection and reconstruction.</p>
+                 end-to-end manner for tasks such as 3D surface defect detection and reconstruction. Main innovations: 
+                 <br><strong>(1) Customized deep semantic network based on the U-Net structure</strong> <br><strong>(2) Transfer learning</strong> 
+                 <br><strong>(3) Establishment of point cloud datasets</strong></p>
+            </td>
+          </tr>
+
+          <tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
+            <td style="padding:0px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='hnerf_image'><video  width=120% height=120% muted autoplay loop>
+                <source src="images/TIM2_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/TIM2_before.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function hnerf_start() {
+                  document.getElementById('hnerf_image').style.opacity = "1";
+                }
+
+                function hnerf_stop() {
+                  document.getElementById('hnerf_image').style.opacity = "0";
+                }
+                hnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/abstract/document/10129146">
+                <papertitle>Integration of Multiple Sensors for Noncontact Rail Profile Measurement and Inspection</papertitle>
+              </a>
+              <br>
+              <strong>Jiaqi Ye</strong>,
+              <a href="https://www.birmingham.ac.uk/staff/profiles/eese/stewart-edward.aspx">Edward Stewart</a>,
+              <a href="https://scholar.google.co.uk/citations?user=sN5BNaYAAAAJ&hl=en">Dingcheng Zhang</a>,
+              <a href="https://www.linkedin.com/in/qianyu-chen-uob/?originalSubdomain=uk">Qianyu Chen</a>,
+              <a href="https://www.birmingham.ac.uk/staff/profiles/eese/roberts-clive.aspx">Clive Roberts</a> <br>
+              <br>
+              <em>IEEE Transactions on Instrumentation and Measurement</em>, vol. 70, pp. 1-12, 2021.
+              <br>
+              <p>Developed a six-degrees-of-freedom portable scanner, integrating a laser triangulation sensor, an HD camera, 
+                and an inertial measurement unit (IMU), for high-precision object profile measurement. Main innovations: 
+                <br><strong>(1) Multi-sensor fusion and miniaturisation</strong><br><strong>(2) High-precision point cloud data registration.</strong></p>
             </td>
           </tr>
 
