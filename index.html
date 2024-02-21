@@ -73,6 +73,43 @@
             <p></p>           
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+          <tr onmouseout="robottracking_stop()" onmouseover="robottracking_start()" bgcolor="#ffffd0">
+            <td style="padding:0px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='robottracking_image'><video  width=120% height=120% muted autoplay loop>
+                <source src="images/RobotTracking.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/RobotTracking.jpg' width="180">
+              </div>
+              <script type="text/javascript">
+                function robottracking_start() {
+                  document.getElementById('robottracking_image').style.opacity = "1";
+                }
+
+                function robottracking_stop() {
+                  document.getElementById('robottracking_image').style.opacity = "0";
+                }
+                robottracking_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Dynamic Robot Manipulation with Body Landmark Detection, Inertial Measurement, and Depth Sensing</papertitle>
+              <br>
+              <strong>Jiaqi Ye</strong>,
+              <a href="https://www.birmingham.ac.uk/staff/profiles/mechanical/hajiyavand-amir.aspx">Amir Hajiyavand</a>
+              <br>
+              <em>12-2023 to Present</em>  
+              <p>In the field of robot manipulation, obtaining precise target coordinates in 3D space is imperative. 
+                This project develops a real-time robot2point tracking system. In this specific example, the system utilizes 
+                (1) a pre-trained deep learning model to recognize human landmarks (X, Y), (2) a depth camera to determine the distance to the target point (Z),
+                and (3) an IMU to maintain the camera pose in 3D space. Beyond robot manipulation, enhanced with various sensors, 
+                the system supports human body analysis, 3D scanning and modeling, and more.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()" bgcolor="#ffffd0">
             <td style="padding:0px;width:25%;vertical-align:middle">
               <div class="one">
@@ -99,7 +136,7 @@
               <strong>Jiaqi Ye</strong>, 
               <a href="https://www.birmingham.ac.uk/staff/profiles/mechanical/hajiyavand-amir.aspx">Amir Hajiyavand </a>
               <br>
-              <em>08-2022 to Present</em>  
+              <em>08-2022 to 12-2023</em>  
               <br>	
               <p>This industrial project aims to seamlessly integrate a UR robot platform into a live machinery components manufacturing line, 
                 replacing a human operator to carry out repetitive quality inspection processes. The design consists of three modules: 
@@ -320,7 +357,7 @@
             <td style="padding:0px;width:25%;vertical-align:middle">
                 <div class="one">
                     <div id='urf1_video' style="display:none;">
-                        <video width="120%" height="120%" muted autoplay loop>
+                        <video width="100%" height="100%" muted autoplay loop>
                             <source src="images/YOLOV8 Publication1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -354,9 +391,80 @@
               <p>A fast electronic components detection and deoding (resistance) platform developed to benefit UoB EESE students on their final year projects by facilitating 
                  circuit board developement processes, based on: 
                 <br><strong>(1) A pipeline running two custom trained YOLOV8 models</strong><br><strong>(2)PyTorch-GPU with increased processing speeds </strong></p>
+              </td>
+          </tr>
+
+          <tr style="height: 5px;">
+            <td colspan="2"></td>
+        </tr>
+
+          <tr onmouseout="urf2_stop()" onmouseover="urf2_start()">
+            <td style="padding:0px;width:25%;vertical-align:middle">
+                <div class="one">
+                    <div id='urf2_video' style="display:none;">
+                        <video width="100%" height="100%" muted autoplay loop>
+                            <source src="images/SLAM.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div id='urf2_img'>
+                        <img src='images/SLAM.jpg' width="180">
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    function urf2_start() {
+                        document.getElementById('urf2_img').style.display = "none";
+                        document.getElementById('urf2_video').style.display = "block";
+                    }
+        
+                    function urf2_stop() {
+                        document.getElementById('urf2_img').style.display = "block";
+                        document.getElementById('urf2_video').style.display = "none";
+                    }
+                    urf2_stop();
+                </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Robot Localisation and Mapping</papertitle>
+              <br>
+              <strong>Jiaqi Ye</strong><br>
+              <p></p>
+
+              <p>Mobile robot navigation using: 
+                <br><strong>(1) SLAM </strong><strong> and (2)Probabilistic Localisation  </strong></p>
             </td>
           </tr>
+
+          <!-- <tr style="height: 30px;">
+            <td colspan="2"></td>
+        </tr>
+
+        <tr>
+          <td style="padding:0px;width:25%;vertical-align:middle">
+              <div class="one">
+                  <div id='urf3_img'>
+                      <img src='images/SLAM.jpg' width="180">
+                  </div>
+              </div>
+              <script type="text/javascript">
+                // No need for separate functions to start and stop since we always want the image
+                document.getElementById('urf3_img').style.display = "block";
+            </script>    
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Robot Localisation and Mapping</papertitle>
+              <br>
+              <strong>Jiaqi Ye</strong><br>
+              <p></p>
+              <p>Mobile robot navigation using: 
+                  <br><strong>(1) SLAM </strong><strong> and (2)Probabilistic Localisation  </strong></p>
+          </td>
+      </tr>   -->
+
+    
+
         </tbody></table>
+        
 
 
 
